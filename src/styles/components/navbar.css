@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 0.8rem;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #d02fa8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.navbar > .app-name {   
+    display: flex;
+    align-items: center;
+    transform: translateX(-1.75rem);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    z-index: -1;
+}
+
+.navbar > .app-name a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.35em;
+    text-decoration: none;
+    color: white;
+    min-width: 44px;
+    min-height: 44px;
+    font-family: 'Courgette', cursive;
+}
+
+.navbar .simple-nav {
+    display: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .simple-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+}
+
+.navbar .toggle-mobile-sidenav {
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+.navbar .toggle-mobile-sidenav .material-icons {
+    font-size: 2.2em;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar > .app-name a {
+        font-size: 1.45em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .navbar {        
+        flex-direction: column;
+        align-items: center;
+        padding: none;
+    }
+
+    .navbar > .app-name {
+        transform: none;
+    }
+
+    .navbar .simple-nav {
+        width: 100%;
+        display: block;        
+    }
+
+    .navbar .simple-nav a {
+        margin: 0 0.8rem;
+        font-size: 1.25em;
+        color: white;
+    }
+
+    .navbar .simple-nav a:hover {
+        font-weight: bold;
+    }
+
+    .navbar .simple-nav a:focus {
+        font-weight: bold;
+    }
+
+    .navbar .toggle-mobile-sidenav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .navbar > .app-name a {
+        font-size: 1.65em;
+    }
+}

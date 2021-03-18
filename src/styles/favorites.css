@@ -1,0 +1,13 @@
+.empty-message {
+    display: none;
+    width: 90%;
+    font-size: 1.4em;
+    padding: 5%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ff000a;
+}
+
+.empty-message.show {
+    display: block;
+}

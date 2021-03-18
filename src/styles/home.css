@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.skip-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    padding: 1%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: black;
+    text-decoration: none;
+    z-index: 100;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.skip-content:focus {
+    top: 0;
+}
+
+.main-page {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    overflow: auto;
+    height: 90%;
+}
+
+.container > h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #292929;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron {    
+    background-image: url('/images/hero-image-small.jpg');
+    background-size: cover;
+    height: 25rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;    
+}
+
+.jumbotron .jumbotron-wrapper {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 2.5%;
+}
+
+.jumbotron .jumbotron-wrapper .content {
+    transform: translateY(-20%);
+}
+
+.jumbotron .jumbotron-wrapper .welcome {
+    width: 95%;
+    font-family: 'Lobster', cursive;
+    font-size: 1.8em;
+    margin-bottom: 0.8rem;
+}
+
+.jumbotron .jumbotron-wrapper .short-desc {
+    display: block;
+    width: 95%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.95em;
+}
+
+.content-container {
+    padding: 2.5%;
+}
+
+.card {
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    padding: 5%;
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.card .image {
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 0.8rem;
+    background-color: #c7c7c7;
+}
+
+.card .name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: 0.5rem;
+    color: black;
+
+}
+
+.card .city-rating {
+    display: flex;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;    
+    font-size: 0.9em;
+    color: #454545;
+}
+
+.card .city-rating .city .material-icons,
+.card .city-rating .rating .material-icons {
+    margin-right: 0.25rem;
+}
+
+.card .city-rating .city,
+.card .city-rating .rating {
+    display: flex;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+
+.card .city-rating .rating .material-icons {
+    color: #ffe400;
+}
+
+.card .city-rating .city .material-icons{
+    color: #f80712;
+}
+
+.card .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #353535;
+}
+
+.error-message {
+    display: none;
+    width: 90%;
+    font-size: 1.4em;
+    padding: 5%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ff000a;
+}
+
+.error-message.show {
+    display: block;
+}
+
+footer {
+    padding: 2.5% 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    background-color: #515151;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+footer span {
+    font-family: 'Courgette', cursive;
+}
+
+@media screen and (min-width: 360px) {
+    .card .image {
+        height: 12.5rem;
+        border-radius: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .card .image {
+        height: 15rem;
+        border-radius: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .card .name {
+        font-size: 1.45em;
+        margin-bottom: 0.5rem;
+    }
+
+    .card .city-rating {
+        margin-bottom: 1rem;
+        font-size: 1em;
+    }
+
+    .card .description {        
+        font-size: 0.9em;        
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .card .image {
+        height: 20rem;
+        border-radius: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .jumbotron {    
+        background-image: url('/images/hero-image-large.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card .image {
+        height: 15rem;
+        border-radius: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .list-restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.8rem;
+    }
+
+    .jumbotron .jumbotron-wrapper .welcome {
+        width: 95%;
+        font-size: 2.2em;
+        margin-bottom: 0.8rem;
+    }
+    
+    .jumbotron .jumbotron-wrapper .short-desc {
+        width: 95%;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .jumbotron {        
+        background-image: url('/images/hero-image.jpg');
+        height: 30rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card .image {
+        height: 20rem;
+        border-radius: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    footer {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card .image {
+        height: 25rem;
+        border-radius: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .jumbotron {        
+        height: 35rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #root {
+        margin: auto;
+        position: relative;
+        width: 1920px;    
+    }
+
+    .list-restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0.8rem;
+    }
+}
