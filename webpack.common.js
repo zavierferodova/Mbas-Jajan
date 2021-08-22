@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
 const ImageminMozjpeg = require('imagemin-mozjpeg')
 const { InjectManifest } = require('workbox-webpack-plugin')
@@ -53,10 +52,6 @@ module.exports = {
     }
   },
   plugins: [
-    new InjectManifest({
-      swSrc: path.resolve(__dirname, 'src/scripts/worker/service-worker.js'),
-      swDest: 'service-worker.js'
-    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html'
@@ -77,6 +72,9 @@ module.exports = {
         }
       ]
     }),
-    new BundleAnalyzerPlugin()
+    new InjectManifest({
+      swSrc: path.resolve(__dirname, 'src/scripts/worker/service-worker.js'),
+      swDest: 'service-worker.js'
+    }),
   ]
 }
