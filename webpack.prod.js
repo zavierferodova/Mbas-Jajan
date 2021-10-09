@@ -1,6 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { merge } = require('webpack-merge')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const common = require('./webpack.common')
 
 const defaultProductionConf = {
@@ -22,8 +22,8 @@ const defaultProductionConf = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
-    new BundleAnalyzerPlugin()
+    new CleanWebpackPlugin()
+    // new BundleAnalyzerPlugin()
   ]
 }
 

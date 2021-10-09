@@ -59,7 +59,7 @@ class Favorites {
     return `
         <a href="/#/detail/${restaurant.id}" class="card">
             <div class="image">
-                <img src="${CONFIG.IMAGE_URL_MED}${restaurant.pictureId}" alt="Resto atau Cafe ${restaurant.name} yang terletak di ${restaurant.city} dengan rating ${restaurant.rating.toString().replace('.', ',')}.">
+                <img data-src="${CONFIG.IMAGE_URL_MED}${restaurant.pictureId}" alt="Resto atau Cafe ${restaurant.name} yang terletak di ${restaurant.city} dengan rating ${restaurant.rating.toString().replace('.', ',')}.">
             </div>
             <div aria-hidden="true" class="name">${restaurant.name}</div>
             <div aria-hidden="true" class="city-rating">

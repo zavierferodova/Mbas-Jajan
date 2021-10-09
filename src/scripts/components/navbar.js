@@ -57,7 +57,7 @@ class Navbar extends HTMLElement {
             <div class="simple-nav"> 
                 <a href="/">Home</a>
                 <a href="/#/favorites">Favorite</a>
-                <a href="https://zavierferodova.github.io/">About</a>
+                <a href="https://github.com/zavierferodova">About</a>
             </div>
         `
   }

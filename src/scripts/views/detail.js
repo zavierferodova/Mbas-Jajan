@@ -34,7 +34,7 @@ class Detail {
               <button class="btn-favorite" aria-label="Favorit">
                 <span class="material-icons">favorite_border</span>
               </button>
-              <img class="lazyload" src="${CONFIG.IMAGE_URL_LARG}${this._restaurantData.pictureId}" alt="${this._restaurantData.name}"/>
+              <img class="lazyload" data-src="${CONFIG.IMAGE_URL_LARG}${this._restaurantData.pictureId}" alt="${this._restaurantData.name}"/>
               <div class="bottom-wrapper">
                 <div class="name">${this._restaurantData.name}</div>
                 <div class="rating" aria-label="rating ${this._restaurantData.rating.toString().replace('.', ',')}">

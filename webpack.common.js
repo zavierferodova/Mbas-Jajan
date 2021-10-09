@@ -56,6 +56,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html'
     }),
+    new InjectManifest({
+      swSrc: path.resolve(__dirname, 'src/scripts/worker/service-worker.js'),
+      swDest: 'service-worker.js'
+    }),
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({
@@ -71,10 +75,6 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/')
         }
       ]
-    }),
-    new InjectManifest({
-      swSrc: path.resolve(__dirname, 'src/scripts/worker/service-worker.js'),
-      swDest: 'service-worker.js'
     })
   ]
 }

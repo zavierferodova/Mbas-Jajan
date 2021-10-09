@@ -11,7 +11,7 @@ import { skipWaiting, clientsClaim, setCacheNameDetails } from 'workbox-core'
 skipWaiting()
 clientsClaim()
 setCacheNameDetails({
-  prefix: 'mbas-jajan',
+  prefix: 'mbas-jajan-v1.0',
   precache: 'precache',
   runtime: 'runtime'
 })

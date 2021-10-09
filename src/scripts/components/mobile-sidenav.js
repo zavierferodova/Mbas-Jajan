@@ -24,7 +24,7 @@ class Sidenav extends HTMLElement {
       {
         icon: 'info',
         title: 'About',
-        url: 'https://zavierferodova.github.io/'
+        url: 'https://github.com/zavierferodova'
       }
     ]
   }

@@ -4,8 +4,8 @@
   "description": "Web Apps for find restaurant or cafe",
   "main": "index.js",
   "scripts": {
-    "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start-dev": "npm run build-image && webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js && npm run build-image",
     "build-image": "node sharp.js",
     "lint": "eslint ./src",
     "test": "karma start",
