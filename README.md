@@ -4,19 +4,30 @@ This is a website i've built for finish my course on Dicoding Academy. Final Sub
 Application Link : [mbas-jajan.web.app](https://mbas-jajan.web.app)
 
 ## Testing Command
-This application also tested with End to End Testing and Integration Testing
+This application also tested with End to End Testing and Integration Testing. Here the command to perform the testing.
 
-- End to End Test : `npm run e2e`
-- Integration Testing : `npm run test`
+End to End Test :
+```sh
+npm run e2e
+```
+Integration Testing :
+```sh
+npm run test
+```
 
 ## Production & Development Command
+Here is the commands if you want try to develop with your own version.
 
-You can develop and reuse with your own version using this application base.
+Production : 
+```sh
+npm run build
+```
+Development : 
+```sh
+npm run start-dev
+```
 
-- Production : `npm run build`
-- Development : `npm run start-dev`
-
-## Application
+## Application Pages
 
 ![Homepage](https://raw.githubusercontent.com/zavierferodova/Mbas-Jajan/master/screenshot/home.png)
 <p align="center">Homepage</p>
