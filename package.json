@@ -12,7 +12,6 @@
     "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
-  "author": "zavierferodova@outlook.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.5",

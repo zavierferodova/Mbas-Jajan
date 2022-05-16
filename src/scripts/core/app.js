@@ -10,7 +10,9 @@ class App {
 
   _appInit () {
     window.addEventListener('DOMContentLoaded', () => {
-      registerServiceWorker()
+      if (process.env.NODE_ENV === 'production') {
+        registerServiceWorker()
+      }
     })
 
     window.addEventListener('hashchange', () => {

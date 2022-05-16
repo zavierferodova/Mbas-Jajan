@@ -2,8 +2,6 @@
 
 This is a website i've built for finish my course on Dicoding Academy. Final Submission Menjadi Front-End Web Developer Expert Course. The application is use Indonesian language for the interface and you can translate it with English if needed.
 
-Hosted Application : [mbas-jajan.web.app](https://mbas-jajan.web.app)
-
 ## Testing Command
 This application also tested with End to End Testing and Integration Testing. Here the command to perform the testing.
 
