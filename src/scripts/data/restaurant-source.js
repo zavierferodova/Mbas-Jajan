@@ -1,5 +1,4 @@
 import API_ENDPOINT from '../constant/api-endpoint'
-import CONFIG from '../constant/config'
 
 class RestaurantSource {
   static async restaurantList () {
@@ -18,8 +17,7 @@ class RestaurantSource {
     const response = await fetch(API_ENDPOINT.REVIEW, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'X-Auth-Token': CONFIG.API_KEY
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(review)
     })
